@@ -1,0 +1,238 @@
+@basecolor:rgb(161, 47, 47);
+#root{
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+}
+.conpng ul  .sure{
+    color: @basecolor;
+    font-weight: bold;
+    border: 1px solid @basecolor;
+}
+h2{
+    border-left: 2px solid @basecolor;
+    padding-left: 30px;
+    margin-left: 30px;
+    font-size: 24px;
+}
+.conpng{
+    img{
+        height: 200px;
+        width: auto;
+        display: block;
+        margin: auto;    
+    }
+    ul{
+        overflow: hidden;
+        li{
+            float: left;
+            margin: 10px;
+            font-size: 12px;
+            line-height: 30px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    }
+}
+button{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 16px;
+    margin: 0 10px;
+    line-height: 40px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ccc;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.conlist{
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 1px #ccc;
+    ul{
+        width: 100%;
+    }
+    li{
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .png{
+        width: 300px;
+        float: left;
+        img{
+            display: block;
+            height: 100px;
+            width: auto;
+            margin: 10px auto;    
+        }
+    }
+    .txt{
+        flex-grow: 1;
+        border-left: 1px solid #ccc;
+        line-height: 100px;
+        text-align: center;
+    }
+}
+.conlist img{
+    height: 100px;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.btn-group{
+    padding: 20px 0;
+    a{
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 0 16px;
+        margin: 0 10px;
+        line-height: 60px;
+        height: 60px;
+        display: inline-block;
+        color: #000;
+        text-decoration: none;
+        background-color: #f4f4f4;
+        cursor: pointer;
+    }
+    .sure{
+        background-color: @basecolor;
+        color: #fff;
+        border: 1px solid @basecolor;
+    }
+}
+.loading.show{
+    display: block;
+}
+.loading{
+    display: none;
+    width: 80px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top:100px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.loading span{
+    display: inline-block;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background: lightgreen;
+    -webkit-animation: load 1s ease infinite;
+}
+@-webkit-keyframes load{
+    0%,100%{
+        height: 40px;
+        background: lightgreen;
+    }
+    50%{
+        height: 70px;
+        margin: -15px 0;
+        background: lightblue;
+    }
+}
+.loading span:nth-child(2){
+    -webkit-animation-delay:0.2s;
+}
+.loading span:nth-child(3){
+    -webkit-animation-delay:0.4s;
+}
+.loading span:nth-child(4){
+    -webkit-animation-delay:0.6s;
+}
+.loading span:nth-child(5){
+    -webkit-animation-delay:0.8s;
+}
+.runbtn{
+    padding: 0 30px;
+    margin: 30px 0 0 40px;
+}
+h2{
+    padding: 30px 0;
+    display: block;
+}
+.file {
+    margin: 120px 0 0 30px;
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+.resulttxt{
+    padding: 10px 30px;
+    color: #333;
+    font-size: 14px;
+    line-height: 30px;
+}
+.conlist{
+    box-sizing: border-box;
+    ul{
+        display: block;
+    }
+    li{
+        border-bottom: 1px solid #ccc;
+        font-size: 12px;
+        display: block;
+        float: none;
+        padding: 10px 0;
+    }
+}
+#root{
+    p{
+        font-size: 14px;
+        line-height: 30px;
+        padding: 30px;
+    }
+}
+.formname{
+    padding: 30px 120px;
+}
+.chooselist{
+    padding: 10px 30px;
+}
+h2{
+    margin-top: 30px;
+}
+.conbtns{
+    padding: 30px ;
+    overflow: hidden;
+    button{
+        margin: 0 30px;
+        padding: 0 10px;
+    }
+}
